@@ -279,17 +279,11 @@ func xfOperator(left, right tree.Result, f *xpFilt, op string) error {
 
 func xfAbsLocPath(f *xpFilt, val string) {
 	i := f.t
-	for i.GetNodeType() != tree.NtRoot {
-		i = i.GetParent()
-	}
 	f.ctx = tree.NodeSet{i}
 }
 
 func xfAbbrAbsLocPath(f *xpFilt, val string) {
 	i := f.t
-	for i.GetNodeType() != tree.NtRoot {
-		i = i.GetParent()
-	}
 	f.ctx = tree.NodeSet{i}
 	f.expr = abbrPathExpr()
 	find(f)

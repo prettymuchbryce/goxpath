@@ -58,20 +58,6 @@ func TestRoot(t *testing.T) {
 	execPath(p, x, exp, nil, t)
 }
 
-func TestRoot2(t *testing.T) {
-	x := xmltree.MustParseXML(bytes.NewBufferString(`<?xml version="1.0" encoding="UTF-8"?><test><path/></test>`))
-	x = MustParse("/test/path").MustExec(x).(tree.NodeSet)[0]
-	for _, i := range []string{"/", "//test"} {
-		res, err := MarshalStr(MustParse(i).MustExec(x).(tree.NodeSet)[0])
-		if err != nil {
-			t.Error(err)
-		}
-		if res != "<test><path></path></test>" {
-			t.Error("Incorrect result", res)
-		}
-	}
-}
-
 func TestAbsPath(t *testing.T) {
 	p := ` / test / path`
 	x := `<test><path/></test>`
