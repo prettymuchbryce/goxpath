@@ -5,8 +5,8 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/ChrisTrenkamp/goxpath/tree"
-	"github.com/ChrisTrenkamp/goxpath/tree/xmltree"
+	"github.com/prettymuchbryce/goxpath/tree"
+	"github.com/prettymuchbryce/goxpath/tree/xmltree"
 )
 
 func TestISO_8859_1(t *testing.T) {

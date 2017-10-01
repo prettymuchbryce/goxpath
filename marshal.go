@@ -5,7 +5,7 @@ import (
 	"encoding/xml"
 	"io"
 
-	"github.com/ChrisTrenkamp/goxpath/tree"
+	"github.com/prettymuchbryce/goxpath/tree"
 )
 
 //Marshal prints the result tree, r, in XML form to w.

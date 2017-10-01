@@ -4,7 +4,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/ChrisTrenkamp/goxpath"
+	"github.com/prettymuchbryce/goxpath"
 )
 
 func TestSingleFields(t *testing.T) {

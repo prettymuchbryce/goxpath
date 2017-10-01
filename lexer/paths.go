@@ -3,7 +3,7 @@ package lexer
 import (
 	"fmt"
 
-	"github.com/ChrisTrenkamp/goxpath/xconst"
+	"github.com/prettymuchbryce/goxpath/xconst"
 )
 
 func absLocPathState(l *Lexer) stateFn {

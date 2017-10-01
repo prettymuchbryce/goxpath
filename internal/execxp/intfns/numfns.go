@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/ChrisTrenkamp/goxpath/tree"
+	"github.com/prettymuchbryce/goxpath/tree"
 )
 
 func number(c tree.Ctx, args ...tree.Result) (tree.Result, error) {
